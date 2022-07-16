@@ -1,0 +1,32 @@
+{
+  "name": "ultimate-eslint-config",
+  "version": "1.0.0",
+  "description": "Kirill's favorite linting eslint setup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "eslint",
+    "config"
+  ],
+  "author": "kirill-dev-pro",
+  "license": "ISC",
+  "peerDependencies": {
+    "eslint": "^8.19.0"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
+    "@typescript-eslint/parser": "^5.30.6",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-config-standard-jsx": "^11.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-control-statements": "^3.0.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.6.0"
+  }
+}
