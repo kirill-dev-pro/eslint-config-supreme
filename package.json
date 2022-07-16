@@ -1,6 +1,6 @@
 {
-  "name": "ultimate-eslint-config",
-  "version": "1.0.0",
+  "name": "eslint-config-supreme",
+  "version": "1.0.1",
   "description": "Kirill's favorite linting eslint setup",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,10 @@
     "config"
   ],
   "author": "kirill-dev-pro",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kirill-dev-pro/eslint-config-supreme.git"
+  },
   "license": "ISC",
   "peerDependencies": {
     "eslint": "^8.19.0"
