@@ -22,7 +22,7 @@ module.exports = {
     sourceType: 'module',
   },
   ignorePatterns: ['node_modules/'],
-  plugins: ['react', 'import'],
+  plugins: ['react', 'import', '@typescript-eslint'],
   rules: {
     'prettier/prettier': [
       'error',
@@ -41,8 +41,6 @@ module.exports = {
         groups: ['index', 'sibling', 'parent', 'internal', 'external', 'builtin'],
       },
     ],
-    "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": "error"
   },
   settings: {
     react: {
