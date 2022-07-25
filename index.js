@@ -9,6 +9,7 @@ module.exports = {
     'standard-jsx',
     'plugin:react-hooks/recommended',
     'plugin:prettier/recommended',
+    'plugin:tailwindcss/recommended',
   ],
   globals: {
     Atomics: 'readonly',
@@ -22,7 +23,7 @@ module.exports = {
     sourceType: 'module',
   },
   ignorePatterns: ['node_modules/'],
-  plugins: ['react', 'import', '@typescript-eslint'],
+  plugins: ['react', 'import', '@typescript-eslint', 'tailwindcss'],
   rules: {
     'prettier/prettier': [
       'error',
