@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-supreme",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Kirill's favorite linting eslint setup",
   "main": "index.js",
   "scripts": {

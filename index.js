@@ -42,6 +42,7 @@ module.exports = {
         groups: ['index', 'sibling', 'parent', 'internal', 'external', 'builtin'],
       },
     ],
+    "tailwindcss/no-custom-classname": "off",
   },
   settings: {
     react: {
