@@ -27,8 +27,13 @@ module.exports = {
   rules: {
     'prettier/prettier': [
       'error',
-      { singleQuote: true, jsxSingleQuote: true, semi: false, arrowParens: 'avoid' },
-      { usePrettierrc: true },
+      {
+        singleQuote: true,
+        jsxSingleQuote: true,
+        semi: false,
+        arrowParens: 'avoid',
+        trailingComma: 'all',
+      },
     ],
     'react/jsx-closing-tag-location': 0,
     'react/jsx-handler-names': 0,
