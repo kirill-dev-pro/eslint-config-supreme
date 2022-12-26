@@ -7,12 +7,21 @@ const { execSync } = require("node:child_process")
 
 const config = fs.openSync(".eslintrc.json", "w")
 fs.writeFileSync(config, JSON.stringify({ "extends": "supreme" }))
+console.log('added .eslintrc.json')
 
 if (!fs.existsSync(".vscode/settings.json")) {
-  const vscodeSettings = fs.openSync(".vscode/settings.json", "w")
-  fs.writeFileSync(vscodeSettings, JSON.stringify({
-    "editor.codeActionsOnSave": { "source.fixAll": true }
-  }))
+  try {
+    fs.mkdirSync(".vscode", { recursive: true })
+    const vscodeSettings = fs.openSync(".vscode/settings.json", "w")
+    fs.writeFileSync(vscodeSettings, JSON.stringify({
+      "editor.codeActionsOnSave": { "source.fixAll": true }
+    }))
+    console.log('added .vscode/settings.json')
+  } catch (error) {
+    console.log('skipped .vscode/settings.json')
+  }
+} else {
+  console.log('found existing .vscode/settings.json, skipped')
 }
 
 try {
