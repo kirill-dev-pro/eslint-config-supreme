@@ -33,7 +33,11 @@ module.exports = {
         semi: false,
         arrowParens: 'avoid',
         trailingComma: 'all',
+        printWidth: 100,
       },
+      {
+        usePrettierrc: false,
+      }
     ],
     'react/jsx-closing-tag-location': 0,
     'react/jsx-handler-names': 0,

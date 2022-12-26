@@ -16,12 +16,10 @@
     "url": "https://github.com/kirill-dev-pro/eslint-config-supreme.git"
   },
   "license": "ISC",
-  "peerDependencies": {
-    "eslint": "^8.19.0"
-  },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.30.6",
     "@typescript-eslint/parser": "^5.30.6",
+    "eslint": "^8.30.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-config-standard-jsx": "^11.0.0",
@@ -34,5 +32,8 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-tailwindcss": "^3.6.0",
     "prettier": "^2.7.1"
+  },
+  "bin": {
+    "init": "./init.js"
   }
 }
