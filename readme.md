@@ -4,6 +4,17 @@ This is a all-in-one configuration based on personal preferences of the creator.
 
 ## Setup 
 
+Easy one-line setup with `bun`
+```sh
+bunx eslint-config-supreme init
+```
+or with `npm`
+```sh
+npx eslint-config-supreme init
+```
+
+## Manual setup
+
 1. Install with `npm`
 ```sh
 npm install eslint-config-supreme

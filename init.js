@@ -2,12 +2,18 @@
 
 console.log('eslint-config-supreme init')
 
-const fs = require("fs")
-const { execSync } = require("child_process")
+const fs = require("node:fs")
+const { execSync } = require("node:child_process")
 
-fs.createWriteStream(".eslintrc.json")
-  .write(JSON.stringify({ "extends": "supreme" }))
-  .end()
+const config = fs.openSync(".eslintrc.json", "w")
+fs.writeFileSync(config, JSON.stringify({ "extends": "supreme" }))
+
+if (!fs.existsSync(".vscode/settings.json")) {
+  const vscodeSettings = fs.openSync(".vscode/settings.json", "w")
+  fs.writeFileSync(vscodeSettings, JSON.stringify({
+    "editor.codeActionsOnSave": { "source.fixAll": true }
+  }))
+}
 
 try {
   execSync("bun")
