@@ -26,7 +26,7 @@ if (!fs.existsSync(".vscode/settings.json")) {
 
 try {
   execSync("bun")
-  execSync("bun add eslint-config-supreme")
+  execSync("bun add -d eslint-config-supreme")
 } catch (error) {
   execSync("npm install --save-dev eslint-config-supreme")
 }
