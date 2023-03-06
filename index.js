@@ -1,3 +1,8 @@
+/**
+ * @fileoverview Configuration file for ESLint
+ * @author Kirill Chuprov
+ */
+
 module.exports = {
   env: {
     browser: true,
@@ -10,6 +15,7 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:prettier/recommended',
     'plugin:tailwindcss/recommended',
+    'plugin:astro/recommended',
   ],
   globals: {
     Atomics: 'readonly',
@@ -58,6 +64,16 @@ module.exports = {
       version: 'detect',
     },
   },
+  overrides: [
+    {
+      files: ["*.astro"],
+      parser: "astro-eslint-parser",
+      parserOptions: {
+        parser: "@typescript-eslint/parser",
+        extraFileExtensions: [".astro"],
+      },
+    },
+  ],
   // https://github.com/babel/babel/issues/10904
   parser: '@typescript-eslint/parser',
 }
