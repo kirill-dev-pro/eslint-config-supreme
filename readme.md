@@ -29,6 +29,16 @@ module.exports = {
   extends: 'supreme',
 }
 ```
+3*. Add files extensions to `eslint.validate` in `settings.json` of VS Code. Needed for Astro.
+```json
+"eslint.validate": [
+  "javascript",
+  "javascriptreact",
+  "astro", // Enable .astro
+  "typescript", // Enable .ts
+  "typescriptreact" // Enable .tsx
+]
+```
 
 ### Optional
 

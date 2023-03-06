@@ -24,8 +24,15 @@ if (!fs.existsSync(".vscode/settings.json")) {
     fs.mkdirSync(".vscode", { recursive: true })
     const vscodeSettings = fs.openSync(".vscode/settings.json", "w")
     fs.writeFileSync(vscodeSettings, JSON.stringify({
-      "editor.codeActionsOnSave": { "source.fixAll": true }
-    }))
+      "editor.codeActionsOnSave": { "source.fixAll": true },
+      "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "astro", // Enable .astro
+        "typescript", // Enable .ts
+        "typescriptreact" // Enable .tsx
+      ]
+    }, null, 2))
     console.log('added .vscode/settings.json')
   } catch (error) {
     console.log('skipped .vscode/settings.json')

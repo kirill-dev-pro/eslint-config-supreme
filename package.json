@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-supreme",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Ultimate eslint config for web development",
   "main": "index.js",
   "scripts": {
